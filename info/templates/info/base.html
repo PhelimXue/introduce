@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            {% load static %}
+            <link rel="stylesheet" type="text/css" href="{% static "css/styles.css" %}" media="screen" />
+            <title>{% block title %}Welcome{% endblock %} - Phelim Introducing</title>
+    </head>
+    <body>
+         
+        {% include 'info/nav.html' %}
+         
+        {% block content %}
+        <div>預設內容 沒指定就顯示這邊的文字。</div>
+        {% endblock %}
+         
+        {% include 'info/bottom.html' %}
+         
+    </body>
+</html>

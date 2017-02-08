@@ -1,2 +1,2 @@
 # introduce
-this project is introducing myself
+introducing myself
