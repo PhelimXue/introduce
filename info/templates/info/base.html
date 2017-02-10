@@ -6,14 +6,17 @@
             <title>{% block title %}Welcome{% endblock %} - Phelim Introducing</title>
     </head>
     <body>
+        <div id="hold-body">
          
+        {% include 'info/header.html' %}
         {% include 'info/nav.html' %}
          
         {% block content %}
         <div>預設內容 沒指定就顯示這邊的文字。</div>
         {% endblock %}
          
-        {% include 'info/bottom.html' %}
-         
+        {% include 'info/footer.html' %}
+        
+        </div> 
     </body>
 </html>
